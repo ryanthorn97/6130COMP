@@ -28,7 +28,7 @@ mongoose.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: 
 
 
 var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+db.on('error', console.error.bind(console, 'MongoDB error:'));
 
 var Schema = mongoose.Schema;
 
